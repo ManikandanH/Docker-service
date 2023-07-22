@@ -1,0 +1,23 @@
+{
+  "name": "docker-service",
+  "version": "1.0.0",
+  "description": "A CLI used to get list of docker images in the private repository",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo 'Error: nothing specified' && exit 1",
+    "build": "tsc -b"
+  },
+  "type": "module",
+  "keywords": [
+    "cli"
+  ],
+  "bin": {
+    "ds": "./src/index.js"
+  },
+  "author": "Manikandan Arjunan",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "typescript": "^5.1.6"
+  }
+}
