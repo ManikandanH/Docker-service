@@ -26,7 +26,7 @@ async function dockerService(
 		const authHeader = `Basic ${Buffer.from(`${userName}:${password}`).toString('base64')}`;
 		const result = await (
 			await fetch(
-				`${registryUrl ? `http://${registryUrl}` : DEFAULT_REGISTRY_URL}/${
+				`${registryUrl ? `https://${registryUrl}` : DEFAULT_REGISTRY_URL}/${
 					serviceName || GET_CATALOG
 				}`,
 				{
